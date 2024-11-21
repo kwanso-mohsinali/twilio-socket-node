@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "name": "net-gen-backend",
   "builds": [
     {
-      "src": "app.js",
+      "src": "dist/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "dist/app.js"
     }
   ]
 }
